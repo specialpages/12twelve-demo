@@ -35,9 +35,9 @@ export const Hero: React.FC<HeroProps> = ({
             <div className="inline-flex items-center gap-2 text-xs md:text-sm font-semibold tracking-wider text-[#e0a96d] uppercase">
               <span className="w-2 h-2 rounded-full bg-[#e0a96d]" aria-hidden="true" />
               <span>Direct from Coorg</span>
-              <span className="text-[#68584c]" aria-hidden="true">·</span>
+              <span className="text-[#68584c]" aria-hidden="true">Â·</span>
               <span>Crafted in Srinagar</span>
-              <span className="text-[#68584c]" aria-hidden="true">·</span>
+              <span className="text-[#68584c]" aria-hidden="true">Â·</span>
               <span>100% Authentic Arabica</span>
             </div>
 
@@ -81,12 +81,12 @@ export const Hero: React.FC<HeroProps> = ({
                 <span className="font-bold text-[#f7f5ee] ml-1">4.9 / 5.0</span>
                 <span>(300+ reviews)</span>
               </div>
-              <span className="hidden sm:inline text-[#473b32]" aria-hidden="true">·</span>
+              <span className="hidden sm:inline text-[#473b32]" aria-hidden="true">Â·</span>
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-[#2f7a47]" />
                 <span>Fresh Small Batches</span>
               </div>
-              <span className="hidden sm:inline text-[#473b32]" aria-hidden="true">·</span>
+              <span className="hidden sm:inline text-[#473b32]" aria-hidden="true">Â·</span>
               <div className="flex items-center gap-1.5">
                 <Coffee className="w-4 h-4 text-[#e0a96d]" />
                 <span>Specialty Grade &gt; 84pts</span>
@@ -100,7 +100,7 @@ export const Hero: React.FC<HeroProps> = ({
               {/* Main Cinematic Splash Showcase */}
               <div className="relative rounded-2xl overflow-hidden border border-[#3b2f26] shadow-2xl bg-[#140e0b] group">
                 <img
-                  src="/src/assets/images/hero_twelve_coffee_1792147635380.jpg"
+                  src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=88"
                   alt="Twelve Coffee signature splash with floating roasted beans"
                   referrerPolicy="no-referrer"
                   className="w-full aspect-[4/3] object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
@@ -131,7 +131,7 @@ export const Hero: React.FC<HeroProps> = ({
                       </div>
                     </div>
                     <div className="mt-2 flex items-center justify-between text-xs">
-                      <span className="font-mono text-[#e0a96d] font-semibold">₹{item.price}</span>
+                      <span className="font-mono text-[#e0a96d] font-semibold">â¹{item.price}</span>
                       <span className="text-[10px] text-[#9c8e7e] group-hover:text-white transition-colors">
                         + Add
                       </span>
