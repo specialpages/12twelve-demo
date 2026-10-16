@@ -10,7 +10,7 @@ export const OurStory: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden border border-[#382b21] shadow-2xl bg-[#17110d] group">
               <img
-                src="/src/assets/images/coorg_coffee_estate_1792147635819.jpg"
+                src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=85"
                 alt="Coorg coffee plantation in Western Ghats mist"
                 referrerPolicy="no-referrer"
                 className="w-full aspect-[4/3] object-cover object-center group-hover:scale-105 transition-transform duration-700"
@@ -23,7 +23,7 @@ export const OurStory: React.FC = () => {
                   &ldquo;We didn&apos;t want commercial warehouse beans stale from months on shelves. We wanted beans so fresh you can smell the Kodagu rainforest in every cup.&rdquo;
                 </p>
                 <div className="text-[11px] font-bold text-[#e0a96d] uppercase tracking-wider">
-                  — Mir Salim, Founder of Twelve Coffee
+                  â Mir Salim, Founder of Twelve Coffee
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@ export const OurStory: React.FC = () => {
           <div className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#e0a96d] uppercase">
               <span>Our Heritage & Mission</span>
-              <span className="text-[#69584b]" aria-hidden="true">·</span>
+              <span className="text-[#69584b]" aria-hidden="true">Â·</span>
               <span>Coorg to Srinagar</span>
             </div>
 
@@ -50,11 +50,11 @@ export const OurStory: React.FC = () => {
             </h2>
 
             <p className="text-sm sm:text-base text-[#b8aba0] leading-relaxed">
-              At Twelve Coffee, coffee isn’t just a quick caffeine rush — it’s a craft, a daily ritual, and an authentic bridge between two extraordinary landscapes.
+              At Twelve Coffee, coffee isnât just a quick caffeine rush â itâs a craft, a daily ritual, and an authentic bridge between two extraordinary landscapes.
             </p>
 
             <p className="text-sm sm:text-base text-[#b8aba0] leading-relaxed">
-              Founded by Mir Salim in Srinagar, Twelve was built on one uncompromising promise: <strong className="text-[#f7f5ee]">100% Original, Direct from Coorg — Taste Authentic Coffee, Guaranteed.</strong> While most cafes serve commercial commodity blends, we partner directly with heritage shade-grown plantations nestled in the mist of Karnataka’s Western Ghats.
+              Founded by Mir Salim in Srinagar, Twelve was built on one uncompromising promise: <strong className="text-[#f7f5ee]">100% Original, Direct from Coorg â Taste Authentic Coffee, Guaranteed.</strong> While most cafes serve commercial commodity blends, we partner directly with heritage shade-grown plantations nestled in the mist of Karnatakaâs Western Ghats.
             </p>
 
             {/* 4 Pillars Grid */}
