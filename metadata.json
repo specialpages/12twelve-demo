@@ -1,0 +1,8 @@
+{
+  "name": "Twelve Coffee | Direct from Coorg to Srinagar",
+  "description": "Authentic specialty coffee crafted direct from Coorg estates to the heart of Srinagar. Experience signature artisanal brews, cold brews, and single-origin roasts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

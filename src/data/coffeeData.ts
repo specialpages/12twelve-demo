@@ -1,0 +1,216 @@
+export interface CoffeeItem {
+  id: string;
+  name: string;
+  kicker: string;
+  category: 'classics' | 'iced' | 'estate' | 'beans';
+  price: number;
+  rating: number;
+  reviewsCount: number;
+  description: string;
+  tastingNotes: string[];
+  roast: 'Light' | 'Medium' | 'Medium-Dark' | 'Dark';
+  origin: string;
+  elevation: string;
+  image: string;
+  isPopular?: boolean;
+  isSignature?: boolean;
+  calories?: string;
+}
+
+export const COFFEE_MENU: CoffeeItem[] = [
+  {
+    id: 'latte-supreme',
+    name: 'Twelve Velvet Cappuccino',
+    kicker: 'House Signature · Microfoam Art',
+    category: 'classics',
+    price: 210,
+    rating: 4.9,
+    reviewsCount: 342,
+    description: 'Double shot of freshly pulled single-origin Coorg Arabica, textured with velvety steamed whole milk and topped with dense rosetta microfoam.',
+    tastingNotes: ['Milk Chocolate', 'Toasted Hazelnut', 'Warm Brioche'],
+    roast: 'Medium',
+    origin: 'Madikeri, Coorg (Karnataka)',
+    elevation: '1,150 MASL',
+    image: '/src/assets/images/signature_latte_art_1792147636504.jpg',
+    isSignature: true,
+    isPopular: true,
+  },
+  {
+    id: 'spanish-cloud',
+    name: 'Coorg Spanish Cloud Latte',
+    kicker: 'Iced Specialty · Layered Sweet Cream',
+    category: 'iced',
+    price: 240,
+    rating: 5.0,
+    reviewsCount: 420,
+    description: 'Rich condensed milk base poured over clear ice, cold shaken farm milk, and crowned with a concentrated float of double dark Coorg espresso.',
+    tastingNotes: ['Dulce de Leche', 'Roasted Cocoa', 'Madagascar Vanilla'],
+    roast: 'Medium-Dark',
+    origin: 'Virajpet Hills, Coorg',
+    elevation: '1,200 MASL',
+    image: '/src/assets/images/iced_espresso_brew_1792147636903.jpg',
+    isSignature: true,
+    isPopular: true,
+  },
+  {
+    id: 'coorg-peaberry-pourover',
+    name: 'Coorg Honey Peaberry Pour-Over',
+    kicker: 'Single Estate · V60 Hand Brew',
+    category: 'estate',
+    price: 260,
+    rating: 4.9,
+    reviewsCount: 188,
+    description: 'Only 5% of coffee harvests yield rare round peaberry beans. Extracted slowly through Japanese V60 for unmatched sweetness and silky floral clarity.',
+    tastingNotes: ['Wild Forest Honey', 'Night Jasmine', 'Dried Fig'],
+    roast: 'Light',
+    origin: 'Kushalnagar Shade Estate, Coorg',
+    elevation: '1,250 MASL',
+    image: '/src/assets/images/hero_twelve_coffee_1792147635380.jpg',
+    isSignature: true,
+  },
+  {
+    id: 'cold-brew-18hr',
+    name: '18-Hour Coorg Cold Brew',
+    kicker: 'Slow Extracted · Low Acidity',
+    category: 'iced',
+    price: 220,
+    rating: 4.8,
+    reviewsCount: 295,
+    description: 'Steeped for 18 continuous hours in filtered mountain water. Exceptionally smooth, naturally sweet, with low bitterness and high caffeine punch.',
+    tastingNotes: ['Dark Cacao Nibs', 'Black Cherry', 'Molasses'],
+    roast: 'Medium-Dark',
+    origin: 'Coorg High Range Reserve',
+    elevation: '1,100 MASL',
+    image: '/src/assets/images/iced_espresso_brew_1792147636903.jpg',
+    isPopular: true,
+  },
+  {
+    id: 'espresso-eclipse',
+    name: 'Espresso Eclipse Double Shot',
+    kicker: 'Pure Extraction · 9-Bar Pressure',
+    category: 'classics',
+    price: 160,
+    rating: 4.8,
+    reviewsCount: 174,
+    description: 'The pure beating heart of Twelve Coffee. Dense golden-hazel crema with layered body and deep lingering chocolate aftertaste.',
+    tastingNotes: ['Bittersweet Cocoa', 'Almond Butter', 'Smoked Oak'],
+    roast: 'Dark',
+    origin: 'Suntikoppa Estate, Coorg',
+    elevation: '1,050 MASL',
+    image: '/src/assets/images/signature_latte_art_1792147636504.jpg',
+  },
+  {
+    id: 'twelve-espresso-tonic',
+    name: 'Twelve Citrus Espresso Tonic',
+    kicker: 'Sparkling Brew · Crisp Refresher',
+    category: 'iced',
+    price: 230,
+    rating: 4.7,
+    reviewsCount: 156,
+    description: 'Chilled craft tonic water, fresh lemon & orange oils, layered gently with bright single-origin espresso. The ultimate summer refresher.',
+    tastingNotes: ['Bergamot Citrus', 'Quinine Sparkle', 'Stone Fruit'],
+    roast: 'Light',
+    origin: 'Somwarpet Organic Farm, Coorg',
+    elevation: '1,220 MASL',
+    image: '/src/assets/images/iced_espresso_brew_1792147636903.jpg',
+  },
+  {
+    id: 'cinnamon-drift-mocha',
+    name: 'Cinnamon Drift Dark Mocha',
+    kicker: 'Belgian Cocoa · Ceylon Spice',
+    category: 'classics',
+    price: 250,
+    rating: 4.9,
+    reviewsCount: 210,
+    description: 'Single-estate espresso melted with melted 70% dark chocolate ganache, infused with freshly grated Ceylon cinnamon bark.',
+    tastingNotes: ['Dark Truffle', 'Ceylon Cinnamon', 'Nutmeg Crema'],
+    roast: 'Medium-Dark',
+    origin: 'Coorg Western Ghats',
+    elevation: '1,180 MASL',
+    image: '/src/assets/images/signature_latte_art_1792147636504.jpg',
+  },
+  {
+    id: 'coorg-beans-reserve',
+    name: 'Coorg Peaberry Reserve Whole Beans (250g)',
+    kicker: 'Small Batch Roasted · Sealed Fresh',
+    category: 'beans',
+    price: 480,
+    rating: 5.0,
+    reviewsCount: 145,
+    description: '100% shade-grown Arabica Peaberry beans sourced direct from family estates in Coorg. Roasted fresh every week in small 5kg batches.',
+    tastingNotes: ['Wild Honey', 'Caramelized Fig', 'Cacao Butter'],
+    roast: 'Medium',
+    origin: 'Direct Single-Estate, Coorg',
+    elevation: '1,250 MASL',
+    image: '/src/assets/images/coorg_coffee_estate_1792147635819.jpg',
+    isPopular: true,
+  },
+];
+
+export const FARM_TO_CUP_STEPS = [
+  {
+    step: '01',
+    title: 'Shade-Grown in Coorg Hills',
+    location: 'Western Ghats, Karnataka · 1,200m Elevation',
+    description: 'Our coffee grows beneath the dense biodiversity canopy of Coorg’s ancient forests, shielded from harsh sun alongside wild cardamom, pepper vines, and orange trees. This slow maturation concentrates dense natural sugars.',
+    image: '/src/assets/images/coorg_coffee_estate_1792147635819.jpg',
+    badge: '100% Ethical Single-Estate',
+  },
+  {
+    step: '02',
+    title: 'Handpicked Crimson Cherries',
+    location: 'Selective Harvest · Zero Mechanization',
+    description: 'Skilled estate harvesters pick exclusively blood-red, fully ripe cherries across three separate passes. Each batch undergoes rigorous floatation sorting and honey-processing to retain rich fruit notes.',
+    image: '/src/assets/images/coorg_coffee_estate_1792147635819.jpg',
+    badge: 'Zero Defect Tolerance',
+  },
+  {
+    step: '03',
+    title: 'Small-Batch Roasting in Srinagar',
+    location: 'Twelve Micro-Roastery · Weekly Roasts',
+    description: 'Green beans arrive directly in Srinagar in grain-pro bags. We roast in micro-batches under precision temperature profiling to balance vibrant brightness with a deep chocolatey finish.',
+    image: '/src/assets/images/hero_twelve_coffee_1792147635380.jpg',
+    badge: 'Roasted Every Tuesday',
+  },
+  {
+    step: '04',
+    title: 'Calibrated Barista Extraction',
+    location: '12 Coffee Bar, Srinagar · 9-Bar Purity',
+    description: 'Every shot is ground on demand, tamped with 20kg pressure, and pulled on custom dual-boiler machines with 93.5°C filtered water. Served in ceramic cups or chilled with iced layers.',
+    image: '/src/assets/images/cafe_interior_vibe_1792147639196.jpg',
+    badge: 'Precision Craftsmanship',
+  },
+];
+
+export const REVIEWS = [
+  {
+    id: 1,
+    name: 'Amanpreet Singh',
+    location: 'Visiting from Ludhiana, Punjab',
+    quote: 'Came all the way from Ludhiana to Srinagar, heard so much about bhai ke paas cafe! The iced Spanish latte and pour-over are hands down the best in the valley. Authentic Coorg beans you can actually taste.',
+    rating: 5,
+    tag: 'Verified Coffee Lover',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
+    date: '2 days ago',
+  },
+  {
+    id: 2,
+    name: 'Zoya Mir',
+    location: 'Rajbagh, Srinagar',
+    quote: 'Twelve Coffee is our daily sanctuary. The green 12 signboard and the cozy street-style interior make it feel like a boutique coffee bar in Tokyo or Berlin. Don\'t miss their Velvet Cappuccino!',
+    rating: 5,
+    tag: 'Srinagar Local',
+    avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80',
+    date: '1 week ago',
+  },
+  {
+    id: 3,
+    name: 'Faizan Ahmed',
+    location: 'Old City, Srinagar',
+    quote: 'You can tell immediately they don\'t compromise. Sourcing directly from Coorg estates makes a world of difference compared to commercial roasters. Mir Salim and team have created something truly special here.',
+    rating: 5,
+    tag: 'Coffee Connoisseur',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
+    date: '2 weeks ago',
+  },
+];
